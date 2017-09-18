@@ -4,7 +4,7 @@
   <head>
     <style>
       h1,
-      .left-right-container,
+      .board,
       .result,
       .rules {
       width: 80%;
@@ -20,6 +20,7 @@
       }
 
       h1,
+      .board,
       .left,
       .right,
       .tag,
@@ -51,7 +52,7 @@
   </head>
   <body>
     <h1>Rock Paper Scissors</h1>
-    {% unless site.data.player1.matches == nil and site.data.player2.matches == nil %}
+    {% unless site.data.player1.matches == nil or site.data.player2.matches == nil %}
     <div class="board">
       {% if site.data.player1.matches.size < site.data.player2.matches.size %}
       Waiting for {{ site.data.player1.name }}.
