@@ -50,8 +50,8 @@
                 <h1 class="player">{{ site.data.scissors.player }}</h1>
             </div>
         </div>
-    {% elsif site.data.paper.chosen == false and site.data.rock.chosen == false and site.data.scissors.chosen ==
-    false %}
+        {% elsif site.data.paper.chosen == false and site.data.rock.chosen == false and site.data.scissors.chosen ==
+        false %}
     </div>
 
     <div class="instructions block">
@@ -123,12 +123,12 @@
             </li>
             <li class="list-group-item">
                 <div><i class="fa fa-globe" aria-hidden="true"></i></div>
-                Go here to <a href="https://github.com/njall/rock-paper-scissors">
+                Go to <a href="https://github.com/njall/rock-paper-scissors">
                 https://github.com/njall/rock-paper-scissors</a>
             </li>
             <li class="list-group-item">
                 <div><i class="fa fa-plus" aria-hidden="true"></i></div>
-                Bud #1: Import project and name it rock-paper-scissors.
+                Bud #1: Import project and name it <code>rock-paper-scissors</code>
             </li>
             <li class="list-group-item">
                 <div><i class="fa fa-user-plus" aria-hidden="true"></i></div>
@@ -141,8 +141,9 @@
             </li>
             <li class="list-group-item">
                 <div><i class="fa fa-file-o" aria-hidden="true"></i></div>
-                Open your weapon of choice - _data/rock.yml, _data/paper.yml or
-                _data/scissors.yml. Change <code>false</code> to <code>true</code> and add your name.
+                Open your weapon of choice: _data/rock.yml, _data/paper.yml or
+                _data/scissors.yml. Change <code>false</code> to <code>true</code> from your chosen file and add your
+                name.
             </li>
             <li class="list-group-item">
                 <div>
