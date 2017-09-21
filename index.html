@@ -16,8 +16,8 @@
         </h1>
     </div>
 
-    {% if site.data.paper.chosen and site.data.rock.chosen and site.data.scissors.chosen == false %}
     <div class="winners block">
+    {% if site.data.paper.chosen and site.data.rock.chosen and site.data.scissors.chosen == false %}
         <div class="row winning-row">
             <div class="col-xs-6">
                 <div class="winning weapon-icon"><i class="fa fa-hand-paper-o" aria-hidden="true"></i></div>
@@ -50,8 +50,7 @@
                 <h1 class="player">{{ site.data.scissors.player }}</h1>
             </div>
         </div>
-        {% elsif site.data.paper.chosen == false and site.data.rock.chosen == false and site.data.scissors.chosen ==
-        false %}
+        {% elsif site.data.paper.chosen == false and site.data.rock.chosen == false and site.data.scissors.chosen ==false %}
     </div>
 
     <div class="instructions block">
@@ -75,8 +74,8 @@
                 _data/scissors.yml
             </li>
         </ul>
-    </div>
     {% endif %}
+    </div>
 
     <div class="rules block">
         <h2>Rules</h2>
