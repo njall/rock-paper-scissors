@@ -19,7 +19,11 @@
               <div class="span4">BEATS</div>
               <div class="span4">{{ site.data.scissors.player }}</div>
             {% elsif site.data.paper.chosen == false and site.data.rock.chosen == false and site.data.scissors.chosen == false %}
-              NO ONE CHOSE ANYTHING?!?!
+                    <h2>Instructions</h2>
+      <p>To play, pop a 'chosen: true' next to your choice of <code>rock</code> or <code>paper</code> or <code>scissors</code> and add your player name in the files linked below.</p>
+      <p>Edit <a href="{{ site.github.repository_url }}/blob/gh-pages/_data/rock.yml">_data/rock.yml</a>.</p>
+      <p>Edit <a href="{{ site.github.repository_url }}/blob/gh-pages/_data/paper.yml">_data/paper.yml</a>.</p> 
+      <p>Edit <a href="{{ site.github.repository_url }}/blob/gh-pages/_data/scissors.yml">_data/scissors.yml</a>.</p>             
             {% endif %}
       </div>
     </div>
@@ -32,30 +36,34 @@
         <p>Scissors beats Paper - by chopping them up</p>
         <p>Paper beats Rock - by somehow covering it or something...</p>
 
-      <h2>Instructions</h2>
-      <p>To play, pop a 'chosen: true' next to your choice of <code>rock</code> or <code>paper</code> or <code>scissors</code> and add your player name in the files linked below.</p>
-      <p>Edit <a href="{{ site.github.repository_url }}/blob/gh-pages/_data/rock.yml">_data/rock.yml</a>.</p>
-      <p>Edit <a href="{{ site.github.repository_url }}/blob/gh-pages/_data/paper.yml">_data/paper.yml</a>.</p> 
-      <p>Edit <a href="{{ site.github.repository_url }}/blob/gh-pages/_data/scissors.yml">_data/scissors.yml</a>.</p>             
-
+        <h2>How to play</h2>
       <ol>
-      <li>Go here: https://github.com/njall/rock-paper-scissors</li>
-      <li>Click Fork</li>
-      <li>Find a bud</li>
-      <li>git clone git@github.com:njall/rock-paper-scissors.git (where njall is your buds username)</li>
-      <li>open and edit your choice of _data/rock.yml _data/paper.yml or _data/scissors.yml</li>
-      <li>git add _data/file.yml (this 'stages' a file which tells git 'Hey, I think this file is ready to be saved') <a href="https://git-scm.com/docs/git-add">read more</a>) </li>
-      <li>git commit -m "I added my choice" (which tells git 'yep, go ahead and save this on my machine')</li>
-      <li>git push (which tells git 'now push those changes onto github for everyone to see') </li>
-      <li>and finally, go to njall.github.io/rock-paper-scissors</li>
+      <li>Find a buddy</li>
+      <li>Choose which one is bud #1 and which one is bud #2</li>
+      <li>Go here: <a href="https://github.com/njall/rock-paper-scissors">https://github.com/njall/rock-paper-scissors</a></li>
+      <li>Bud #1: Click Fork</li>
+      <li>Bud #1: Add bud #2 as a collaborator</li>
+      <li>Both open up your terminal!</li>
+      <li>Run this command in your terminal: git clone git@github.com:njall/rock-paper-scissors.git (where njall is bud #1 username. This downloads the code)</li>
+      <li>Open and edit your weapon of choice - _data/rock.yml _data/paper.yml or _data/scissors.yml</li>
+      <li>Change false to true and add your name</li>
+      <li>Run this command: git add _data/file.yml (where file is your choice (e.g. rock). This 'stages' the file which tells git 'Hey, I think this file is ready to be saved') <a href="https://git-scm.com/docs/git-add">read more</a>) </li>
+      <li>Run this command: git commit -m "Added my weopon of choice" (which tells git 'yep, go ahead and save this on my machine, and here's a handy reminder of what I've done')</li>
+      <li>Run this command: git push (which tells git 'now push those changes onto github for the whole world to see')</li>
+      <li>ALERT: An issue occured for the slow-poke! You've both editted the same repository at the same time. You can add one persons set of changes, but the second one requires a bit of action!</li>
+      <li>Slow-poke, run this command: git pull (you've pulled speedy gonzalez' changes into your repository)</li>
+      <li>Now you need to accept these changes. Try commiting them again like you did when you chose your weapon the first time.</li>
+      <li>All good? Push!</li>
+      <li>Not good? Might be a merge error!</li>
+      <li>Finally, go to njall.github.io/rock-paper-scissors to see who won!</li>
       </ol>
-      Open up your terminal
+      
 
     </div>
 
     <h2> About </h2>
        <p>
-        This is adapted from <a href="https://github.com/rgaiacs/rock-paper-scissors">Raniere Silvas Rock-Paper-Scissor Git game</a>. A fun implementation of <a href="https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors">Rock paper scissors</a> that helps show what Git does! The 
+        This is adapted from <a href="https://github.com/rgaiacs/rock-paper-scissors">Raniere Silvas Rock-Paper-Scissor Git game</a> by <a href="">Niall Beard</a> and . A fun implementation of <a href="https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors">Rock paper scissors</a> that helps show what Git does! The 
         game is implemented in <a href="https://shopify.github.io/liquid/">Liquid</a>
         template language and is CC-BY
       </p>
