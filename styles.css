@@ -18,7 +18,7 @@ h3 {
 }
 
 .block {
-    margin-bottom: 15px;
+    margin-bottom: 45px;
 }
 
 .rules-tile {
@@ -45,4 +45,9 @@ h3 {
 
 .play pre {
     margin-top: 10px;
+}
+
+.about img {
+    height: 50px;
+    display: inline-block;
 }
