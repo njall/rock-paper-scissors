@@ -1,0 +1,48 @@
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 36px;
+    color: dimgrey;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+.block {
+    margin-bottom: 15px;
+}
+
+.rules-tile {
+    height: 210px;
+    background-color: rgb(39, 156, 175);
+    color: white;
+    font-size: large;
+    text-align: center;
+    margin-bottom: 15px;
+    vertical-align: middle;
+    border-radius: 10px;
+    padding: 45px;
+}
+
+.rules-tile i {
+    font-size: 40px;
+    padding: 10px;
+}
+
+.play div {
+    display: inline-block;
+    width: 30px;
+}
+
+.play pre {
+    margin-top: 10px;
+}
