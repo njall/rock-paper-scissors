@@ -18,20 +18,42 @@
 
     {% if site.data.paper.chosen and site.data.rock.chosen and site.data.scissors.chosen == false %}
     <div class="winners block">
-        <div class="span4">{{ site.data.paper.player }}</div>
-        <div class="span4">BEATS</div>
-        <div class="span4">{{ site.data.rock.player }}</div>
+        <div class="row winning-row">
+            <div class="col-xs-6">
+                <div class="winning weapon-icon"><i class="fa fa-hand-paper-o" aria-hidden="true"></i></div>
+                <h1 class="player">{{ site.data.paper.player }}</h1>
+            </div>
+            <div class="col-xs-6">
+                <div class="losing weapon-icon"><i class="fa fa-hand-rock-o" aria-hidden="true"></i></div>
+                <h1 class="player">{{ site.data.rock.player }}</h1>
+            </div>
+        </div>
         {% elsif site.data.paper.chosen and site.data.rock.chosen == false and site.data.scissors.chosen %}
-        <div class="span4">{{ site.data.scissors.player }}</div>
-        <div class="span4">BEATS</div>
-        <div class="span4">{{ site.data.paper.player }}</div>
+        <div class="row winning-row">
+            <div class="col-xs-6">
+                <div class="winning weapon-icon"><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></div>
+                <h1 class="player">{{ site.data.scissors.player }}</h1>
+            </div>
+            <div class="col-xs-6">
+                <div class="losing weapon-icon"><i class="fa fa-hand-paper-o" aria-hidden="true"></i></div>
+                <h1 class="player">{{ site.data.paper.player }}</h1>
+            </div>
+        </div>
         {% elsif site.data.paper.chosen == false and site.data.rock.chosen and site.data.scissors.chosen %}
-        <div class="span4">{{ site.data.rock.player }}</div>
-        <div class="span4">BEATS</div>
-        <div class="span4">{{ site.data.scissors.player }}</div>
-    </div>
+        <div class="row winning-row">
+            <div class="col-xs-6">
+                <div class="winning weapon-icon"><i class="fa fa-hand-rock-o" aria-hidden="true"></i></div>
+                <h1 class="player">{{ site.data.rock.player }}</h1>
+            </div>
+            <div class="col-xs-6">
+                <div class="losing weapon-icon"><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></div>
+                <h1 class="player">{{ site.data.scissors.player }}</h1>
+            </div>
+        </div>
     {% elsif site.data.paper.chosen == false and site.data.rock.chosen == false and site.data.scissors.chosen ==
     false %}
+    </div>
+
     <div class="instructions block">
         <h2>Instructions</h2>
         <ul class="list-group">
@@ -42,18 +64,17 @@
             </li>
             <li class="list-group-item">
                 <i class="fa fa-file-o" aria-hidden="true"></i>
-                <a href="/blob/gh-pages/_data/rock.yml">_data/rock.yml</a>
+                _data/rock.yml
             </li>
             <li class="list-group-item">
                 <i class="fa fa-file-o" aria-hidden="true"></i>
-                <a href="/blob/gh-pages/_data/paper.yml">_data/paper.yml</a>
+                _data/paper.yml
             </li>
             <li class="list-group-item">
                 <i class="fa fa-file-o" aria-hidden="true"></i>
-                <a href="/blob/gh-pages/_data/scissors.yml">_data/scissors.yml</a>
+                _data/scissors.yml
             </li>
         </ul>
-
     </div>
     {% endif %}
 
@@ -106,8 +127,8 @@
                 https://github.com/njall/rock-paper-scissors</a>
             </li>
             <li class="list-group-item">
-                <div><i class="fa fa-code-fork" aria-hidden="true"></i></div>
-                Bud #1: Click <code>Fork</code>
+                <div><i class="fa fa-plus" aria-hidden="true"></i></div>
+                Bud #1: Import project and name it rock-paper-scissors.
             </li>
             <li class="list-group-item">
                 <div><i class="fa fa-user-plus" aria-hidden="true"></i></div>

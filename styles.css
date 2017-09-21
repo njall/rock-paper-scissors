@@ -51,3 +51,35 @@ h3 {
     height: 50px;
     display: inline-block;
 }
+
+.winners .player, .winners .beats {
+    text-align: center;
+}
+
+.losing i {
+    background-color: darkred;
+}
+
+.winning i {
+    background-color: green;
+}
+
+.player {
+    text-align: center;
+}
+
+.weapon-icon i {
+    text-align: center;
+    font-size: 72px;
+    padding: 30px;
+    border-radius: 75px;
+    color: white;
+}
+
+.weapon-icon {
+    text-align: center;
+}
+
+.winning-row {
+    padding: 100px 0;
+}
